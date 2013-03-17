@@ -6,7 +6,6 @@ NewAuth is a barebones Ruby on Rails web application with user authentication bu
 
 * Users can login with a username and password, instead of an email and password.
 
-
 ## Dependencies
 
 Before creating the application, you will need:
