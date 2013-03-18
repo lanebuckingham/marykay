@@ -1,6 +1,6 @@
-# NewAuth
+# MaryKay
 
-NewAuth is a barebones Ruby on Rails web application with user authentication built in.  It uses Devise to provide authentication, and a MongoDB database to store the users.  It incorporates several features:
+MaryKay is a barebones Ruby on Rails web application with user authentication built in.  It uses Devise to provide authentication, and a MongoDB database to store the users.  It incorporates several features:
 
 * There is a landing (home) page for all visitors initially.  Once logged in as a user, each user has their own dashboard, and during their session this becomes their home page.  
 
@@ -30,7 +30,7 @@ Homebrew will provide post-installation instructions to get MongoDB running. The
 First, clone the GitHub repo:
 
 ```
-$ git clone https://github.com/mattgraham/newauth.git
+$ git clone https://github.com/mattgraham/marykay.git
 ```
 
 Then install the gems:
@@ -39,7 +39,7 @@ Then install the gems:
 $ bundle install
 ```
 
-Then you will want to change the application name from NewAuth to a new name.  There is a handy shell script provided which will perform all the tedious find-and-replace for you.  
+Then you will want to change the application name from MaryKay to a new name.  There is a handy shell script provided which will perform all the tedious find-and-replace for you.  
 
 First, from the root of the app directory, run the following to ensure the script is executable:
 
@@ -73,18 +73,18 @@ $ rails server
 
 ## Administration
 
-NewAuth uses [RailsAdmin](https://github.com/sferik/rails_admin) to manage the website.  To access it, navigate to /admin and you will be prompted for an admin login.  Admin users cannot be created online for security purposes.  They must be created via command-line.  See the db/seeds.rb file for the initial admin login (assuming you ran ```$ rake db:seed``` above).
+MaryKay uses [RailsAdmin](https://github.com/sferik/rails_admin) to manage the website.  To access it, navigate to /admin and you will be prompted for an admin login.  Admin users cannot be created online for security purposes.  They must be created via command-line.  See the db/seeds.rb file for the initial admin login (assuming you ran ```$ rake db:seed``` above).
 
 
 ## Information
 
 #### Devise
 
-NewAuth relies heavily on the Devise gem to perform user authentication.  For more information, see the [documentation](http://devise.plataformatec.com.br/) for Devise or the [GitHub repo](https://github.com/plataformatec/devise).
+MaryKay relies heavily on the Devise gem to perform user authentication.  For more information, see the [documentation](http://devise.plataformatec.com.br/) for Devise or the [GitHub repo](https://github.com/plataformatec/devise).
 
 #### Mongoid
 
-If you want to learn more about how NewAuth saves users to its database, see the [documentation](http://mongoid.org/en/mongoid/index.html) for Mongoid or the [GitHub repo](https://github.com/mongoid/mongoid).
+If you want to learn more about how MaryKay saves users to its database, see the [documentation](http://mongoid.org/en/mongoid/index.html) for Mongoid or the [GitHub repo](https://github.com/mongoid/mongoid).
 
 
 
