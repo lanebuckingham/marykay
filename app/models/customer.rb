@@ -1,6 +1,6 @@
 class Customer
   include Mongoid::Document  
-
+  
   field :custid,           :type => String, :default => ""
   field :firstname,        :type => String, :default => ""
   field :lastname,         :type => String, :default => ""
@@ -16,6 +16,7 @@ class Customer
   field :level,            :type => Integer, :default => 0
 
 	embeds_many :orders
+  accepts_nested_attributes_for :orders
 
 end
 
