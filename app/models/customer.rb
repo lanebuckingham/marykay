@@ -1,7 +1,6 @@
 class Customer
   include Mongoid::Document  
-  
-  field :custid,           :type => String, :default => ""
+
   field :firstname,        :type => String, :default => ""
   field :lastname,         :type => String, :default => ""
   field :email,            :type => String, :default => ""
@@ -10,13 +9,11 @@ class Customer
   field :city,             :type => String, :default => ""
   field :state,            :type => String, :default => ""
   field :zip,              :type => String, :default => ""
-  field :homephone,        :type => String, :default => ""
-  field :cellphone,        :type => String, :default => ""
-  field :birthdate,        :type => Time
-  field :level,            :type => Integer, :default => 0
+  field :phone,            :type => String, :default => ""
+  field :birthdate,        :type => DateTime
 
-	embeds_many :orders
-  accepts_nested_attributes_for :orders
+  has_many :order_items
+  has_one :account, autobuild: true
 
 end
 

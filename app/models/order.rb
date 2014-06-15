@@ -1,10 +1,10 @@
 class Order
   include Mongoid::Document  
 
-  field :orderid,           :type => String, :default => ""
-  field :archived,          :type => Boolean, :default => false
-  field :orderdate,        :type => Time
+  field :ordernum,          :type => Integer, :default => 0
+  field :date_submitted,    :type => DateTime
 
-  embedded_in :customer
+  has_many :order_items
+  has_many :transactions
 
 end
