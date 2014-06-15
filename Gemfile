@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 ruby '1.9.3'
 gem 'rails', '3.2.11'
-gem 'mongoid'
-gem 'devise'
-gem 'rails_admin'
-gem 'awesome_print'
+gem 'mongoid', '3.0.11'
+gem 'devise', '2.1.2'
+gem 'rails_admin', '0.4.1'
+gem 'awesome_print', '1.2.0'
 gem 'simple_form'
 
 # Gems used only for assets and not required
@@ -21,4 +21,4 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '2.1.4'

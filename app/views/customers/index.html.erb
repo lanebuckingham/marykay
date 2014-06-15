@@ -1,0 +1,15 @@
+<h2>Customers</h2>
+
+<% @customers.each do |c| %>
+  <div>
+    <%= link_to "#{ c.firstname } #{ c.lastname }", c %>
+  </div>
+<% end %>
+
+<br>
+<br>
+
+<h2>Products</h2>
+<div>
+  <%= link_to "Products List", products_path %>
+</div>

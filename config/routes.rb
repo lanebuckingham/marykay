@@ -1,10 +1,44 @@
 Marykay::Application.routes.draw do
 
-  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+  get "accounts/show"
+  get "accounts/create_trans"
+  get "accounts/destroy_trans"
+
+  resources :products
+  # get "products/index"
+  # get "products/create"
+  # get "products/new"
+  # get "products/edit"
+  # get "products/show"
+  # get "products/update"
+  # get "products/destroy"
+
+  resources :customers
+  # get "customers/index"
+  # get "customers/create"
+  # get "customers/new"
+  # get "customers/edit"
+  # get "customers/show"
+  # get "customers/update"
+  # get "customers/destroy"
+
+  resources :orders
+  # get "orders/index"
+  # get "orders/create"
+  # get "orders/new"
+  # get "orders/edit"
+  # get "orders/show"
+  # get "orders/update"
+  # get "orders/destroy"
+  get "orders/order_item_create"
+  get "orders/order_item_edit"
+  get "orders/order_item_destroy"
 
   devise_for :users
 
   resources :dashboard
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   root :to => 'home#index'
 
